@@ -1,0 +1,26 @@
+@import "reset.css";
+
+/* @font-face {
+  font-family: "Hanam";
+  src: url("font\SUIT-Regular.ttf") format("truetype");
+  font-weight: normal;
+} */
+
+body {
+  background-color: tomato;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+#clock {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 90px;
+}
+
+#date {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+}
