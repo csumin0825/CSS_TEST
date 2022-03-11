@@ -10,12 +10,30 @@ function getClock() {
 }
 
 function getDate() {
+  let day_ = "MON";
   const date = new Date();
   const year = String(date.getFullYear());
   const month = String(date.getMonth() + 1).padStart(2, "0");
   const dayt = String(date.getDate()).padStart(2, "0");
-  const day = String(date.getDay());
-  date_.innerText = `${year}.${month}.${dayt}`;
+  const day = date.getDay();
+
+  if (day === 1) {
+    day_ = "MON";
+  } else if (day === 2) {
+    day_ = "TUE";
+  } else if (day === 3) {
+    day_ = "WEN";
+  } else if (day === 4) {
+    day_ = "THU";
+  } else if (day === 5) {
+    day_ = "FRI";
+  } else if (day === 6) {
+    day_ = "SAT";
+  } else if (day === 7) {
+    day_ = "SUN";
+  }
+
+  date_.innerText = `${year}.${month}.${dayt}.${day_}`;
 }
 
 getClock();
